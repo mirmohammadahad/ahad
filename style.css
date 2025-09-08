@@ -209,6 +209,81 @@ footer{
     height: 50px;
     width: 100px;
 }
+/* Base CSS তোমার কোড যেটা লিখছো সেটা 그대로 থাকবে */
+
+/* ---------- Responsive Design ---------- */
+
+/* For tablets (max-width 992px) */
+@media screen and (max-width: 992px) {
+    .nav-search {
+        width: 400px;
+    }
+    .search-select {
+        width: 150px;
+    }
+    .panel-ops {
+        font-size: 0.75rem;
+        margin-left: 10px;
+    }
+    .box {
+        width: 45%; /* দুই কলামে আসবে */
+    }
+}
+
+/* For mobile devices (max-width 768px) */
+@media screen and (max-width: 768px) {
+    .navber {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .panel {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .panel-ops {
+        width: 100%;
+        text-align: center;
+    }
+    .box {
+        width: 80%; /* এক কলামে আসবে */
+    }
+}
+
+/* For very small devices (max-width 480px) */
+@media screen and (max-width: 480px) {
+    .nav-search {
+        flex-direction: column;
+        height: auto;
+    }
+    .search-select, 
+    .search-input, 
+    .search-icon {
+        width: 100%;
+        border-radius: 0;
+    }
+    .hero-section {
+        height: 200px;
+    }
+    .box {
+        width: 100%; /* full width */
+    }
+    .foot-panel2 {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
 
 
     
